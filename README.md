@@ -22,3 +22,13 @@ Specific Requirements
    (4) Delete characters:  prompt the user to enter a string s, a number of characters m, and a position p. 
        Process the string s to delete m characters starting from position p and display the resulting string.
        Return to menu
+
+
+
+
+
+
+
+
+
+
