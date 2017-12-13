@@ -12,13 +12,13 @@ Specific Requirements
 
 3)For String.asm, there are 4 sub-functions.
 
--------(1) A menu to choose from: a) function length, b) put in lowercase, c) delete characters, or d) quit.
+   (1) A menu to choose from: a) function length, b) put in lowercase, c) delete characters, or d) quit.
        
-       (2) Function Length: prompt the user to enter a string and display the length. Return to menu
+   (2) Function Length: prompt the user to enter a string and display the length. Return to menu
        
-       (3) Put in Lowercase: prompt the user to enter a string and change all uppercase letters into lowercase letters. 
+   (3) Put in Lowercase: prompt the user to enter a string and change all uppercase letters into lowercase letters. 
            Return to menu
        
-       (4) Delete characters:  prompt the user to enter a string s, a number of characters m, and a position p. 
-           Process the string s to delete m characters starting from position p and display the resulting string.
-           Return to menu
+   (4) Delete characters:  prompt the user to enter a string s, a number of characters m, and a position p. 
+       Process the string s to delete m characters starting from position p and display the resulting string.
+       Return to menu
