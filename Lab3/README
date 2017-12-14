@@ -1,0 +1,21 @@
+The objective of this lab is to explore the impact of the spatial and temporal locality on the execution of a program. 
+
+Execute (be patient!), study, and analyze the program myInitializeMatrix.
+This program is designed to perform 12 tests. Each test consists of initializing a matrix row-wise first	and then column-wise. 
+After each test, the first 12 lines/columns are displayed just to check. Each matrix initialization is timed.
+The execution time does not include the time to display the matrix. Let us define a RUN as the execution of the program myInitializeMatrix. 
+In other words, a run is launch of ./myInitializeMatrix from the command prompt. This program collects and displays the max, min, and average execution time after each test. 
+The program provides the test # that produced a maximum or a minimal.
+
+
+Task one:
+--Think about experiments or strategies that would allow you to find out the size of the cache, the page size, and any other pertinent information for this lab
+
+
+Task two:
+  1)	Rewrite the initialization code to improve/optimize (if possible) the initialization of the matrix such that the execution time is minimal (recall that we time only the initialization, not the displaying).
+  2)  Write an optimal code that transposes the same matrix (that you just initialized) (swap(&Matrix[i][j],&Matrix[j][i]).
+  “Optimizing” means that we want the smallest execution time to initialize the matrix and transpose it (we time only the initialization and transposition, not the displaying). 
+  Use exactly the same structure as the program provided. One test will consist of optimally initializing the matrix and then (optimally) transpose it. 
+  Your program must run 7 tests and collect the max, min, and average as well as the test numbers that yiels minimal or maximal values. 
+  Your program will be judged based on the average execution time. 
