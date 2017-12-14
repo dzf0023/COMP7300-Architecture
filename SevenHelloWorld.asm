@@ -17,7 +17,7 @@
 			
 			j while 				#jump out 
 			
-		# something wrong  over there 
+		
 		exit: 
 	
 			li  $v0, 6
