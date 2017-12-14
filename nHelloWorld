@@ -1,0 +1,61 @@
+#get the number of input , judge if it from 1 to 10,  if out of range, input again, 
+#if in the range, print that  times of "Hello world "
+
+.data
+	prompt:  .asciiz  "Enter the number between 1 to 10: "
+	message1: .asciiz  "Hello World, "
+	message2: .asciiz "Out of range  "
+.text 
+	# prompt the user to enter age 
+	input:
+	li $v0, 4
+	la $a0, prompt
+	syscall
+	
+  #get user input , suppose the input is an ingeter , beside store the number is $v0
+
+	
+  li $v0, 5
+	syscall
+
+    
+	     
+	 while:
+		bgt  $v0, 10, do
+		blt  $v0, 1, do 
+		j    exit 
+	
+    	 do:
+	     li $v0, 4
+	     la $a0, message2
+	     syscall
+	     j input
+	     
+	 exit: 
+	     #store the result from $v0 to $t0
+	     move $t0, $v0 
+	
+
+####Now  I have the number of input(from 1 to 10), then i need to print that times of "Hello world"
+
+###  Now my number is in the register "$t0"
+		
+		addi $v1, $zero, 0
+
+		while1:
+			bge  $v1, $t0, exit1
+			li $v0, 4
+	 		la $a0, message1 
+	 		syscall
+			addi $v1, $v1,1
+		
+			j while1 
+		exit1: 
+	
+			li  $v0, 5
+			syscall 
+
+	li $v0,10
+	syscall
+	
+	#display the message  ,  print times "Hello World    "
